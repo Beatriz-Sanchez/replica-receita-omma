@@ -7,6 +7,10 @@
   color: #000000;
 }
 
+:focus{
+  outline: 1px solid #FFC107;
+}
+
 body {
   background: #ffffff;
 }

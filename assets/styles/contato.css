@@ -1,13 +1,12 @@
 .screen-reader-only {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
-
 
 
 main>section {
@@ -21,13 +20,16 @@ main>section h2 {
   font-size: 70px;
   font-weight: 700;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.36);
+  min-width: 419px;
   width: 419px;
+  margin-bottom: 283px;
 }
 
 .formulario {
   background: url('../images/contato_side.png') left top no-repeat;
   height: 766px;
-  margin: 283px 128px 133px 127px;
+  max-width: 150ex;
+  margin: 0 128px 133px 127px;
 }
 
 fieldset {
@@ -96,27 +98,48 @@ textarea {
   line-height: 22px;
   display: flex;
   align-items: center;
-  text-transform: lowercase;
+  text-transform: none;
+  padding: 0 33.6px;
+  box-sizing: border-box;
+  text-align: justify;
 
   color: #58555D;
 }
 
-fieldset input::placeholder,
+/* fieldset input::placeholder,
 textarea::placeholder {
   text-indent: 33.6px;
-}
+} */
 
 textarea::placeholder {
   height: 53px;
-  padding-top: 15.2px;
   box-sizing: border-box;
 }
 
-textarea{
+textarea {
   height: 296px;
   resize: none;
+  padding-top: 15.2px;
 }
 
 main>section h2::after {
   content: ' :)';
+}
+
+@media only screen and (max-width:798px) {
+  .formulario {
+    background-image: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  form {
+    margin: 0;
+    width: 100%;
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
 }
