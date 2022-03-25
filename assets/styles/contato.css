@@ -129,17 +129,17 @@ main>section h2::after {
 @media only screen and (max-width:798px) {
   .formulario {
     background-image: none;
-    width: 100%;
-    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   form {
     margin: 0;
     width: 100%;
+    border: none;
   }
 
-  footer {
-    position: fixed;
-    bottom: 0;
+  main>section h2 {
+    margin-bottom: 350px;
   }
 }

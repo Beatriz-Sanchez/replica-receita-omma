@@ -23,45 +23,6 @@ li {
   list-style: none;
 }
 
-.header {
-  min-width: 1263px;
-  position: relative;
-  background: #FFC107;
-  height: 117px;
-  width: 100%;
-  box-shadow: 0px 4px 4px 0px #00000040;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.headerimg {
-  width: 324px;
-  height: 84px;
-}
-
-.menu {
-  min-width: 1263px;
-  width: 100%;
-  height: 48px;
-  background: #FFA000;
-}
-
-.menu ul {
-  display: flex;
-  justify-content: center;
-}
-
-.menu li {
-  padding: 15px 29px;
-}
-
-.menu a {
-  color: #FDFDFD;
-}
-
-
 h1 {
   margin-top: 107px;
   width: 462px;
@@ -80,19 +41,6 @@ h1 {
 .imgreceita {
   height: 300px;
   margin-top: 28px;
-}
-
-footer {
-  min-width: 1263px;
-  width: 100%;
-  height: 119px;
-  display: flex;
-  align-items: center;
-  background: #FFC107;
-}
-
-footer p {
-  color: #FFFFFF
 }
 
 .info {
@@ -151,7 +99,7 @@ footer p {
 }
 
 main {
-  grid-column: [c1];
+  grid-column: c1;
   grid-row: 1;
   margin-left: 8%;
   max-width: 592px;
@@ -159,7 +107,7 @@ main {
 }
 
 .menu_lateral {
-  grid-column: [c2];
+  grid-column: c2;
   grid-row: 1;
   /* margin-right: 13%; */
 }
@@ -187,4 +135,25 @@ main {
 
 .ingredientes {
   width: 95%;
+}
+
+@media only screen and (max-width: 798px){
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  main{
+    margin: auto;
+  }
+  .menu_lateral h2 {
+    margin-top: 100px
+  }
+  .menu_lateral {
+    margin-bottom: 170px;
+  }
+  .imgreceita {
+    min-height: 50px;
+  }
 }
